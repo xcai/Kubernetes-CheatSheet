@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-gitrepo
+spec:
+  containers:
+    - image: nginx:alpine
+      name: nginx-gitrepo
+      volumeMounts:
+        - mountPath: /gitRepo
+          name: git-volume
+  volumes:
+    - name: git-volume
+      gitRepo:
+        #        repository: "git@github.com:xcai/test.git"
+        repository: "https://github.com/xcai/test"
+        revision: "ca4559f2d91fd018d9a32ab1e9d3deaeec7b7f6c"
