@@ -1,0 +1,9 @@
+[submodule "gitc/kubectx"]
+	path = gitc/kubectx
+	url = git@github.com:ahmetb/kubectx.git
+[submodule "gitc/kube-ps1"]
+	path = gitc/kube-ps1
+	url = git@github.com:jonmosco/kube-ps1.git
+[submodule "gitc/k8s-for-docker-desktop"]
+	path = gitc/k8s-for-docker-desktop
+	url = git@github.com:AliyunContainerService/k8s-for-docker-desktop.git
